@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Assignment</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(218, 218, 218);
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .parent {
+            margin: 20px auto;
+            background-color: white;
+            width: 650px;
+            display: flex;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        .profile-image {
+            width: 40%;
+
+            width: 250px;
+            border-radius: 15px;
+            overflow: hidden;
+
+        }
+
+        .profile-image img {
+            height: 250px;
+            width: 100%;
+            display: block;
+            background-color: #f1f5f6;
+        }
+
+        .text-box {
+            padding: 10px 30px 0px 30px;
+
+            width: 60%;
+
+        }
+
+        .profile-name {
+            margin-bottom: 20px;
+        }
+
+        .profile-name h2 {
+            font-size: 33px;
+        }
+
+        .profile-name p {
+            font-size: 20px;
+            color:#b0bac1;
+        }
+
+        .table {
+            display: flex;
+            justify-content: space-between;
+            background-color: 
+            #f1f5f8;
+            padding: 10px 15px 0px 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .number {
+            font-size: 28px;
+        }
+
+        .first-name {
+            margin-bottom: 0px;
+            color: rgb(141, 139, 139);
+        }
+
+        .bottom-box {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            text-align: center;
+
+        }
+        .text,
+        .btn {
+            border: 1px solid  #c7cbce; 
+            border-radius: 7px;
+            width: 45%;
+            padding: 13px 0px;
+            cursor: pointer;
+        }
+        .bottom-box :hover{
+            background-color: blue;
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="profile-image">
+            <img src="./images/boy.png" alt="Loading error">
+        </div>
+        <div class="text-box">
+            <div class="profile-name">
+                <h2>Alex Morrison</h2>
+                <p>Senior Journalist</p>
+            </div>
+            <div class="table">
+                <div class="article">
+                    <div class="first-name">
+                        Article
+                    </div>
+                    <div class="number">
+                        <b>34</b>
+                    </div>
+                </div>
+                <div class="follower">
+                    <div class="first-name">
+                        Followers
+                    </div>
+                    <div class="number">
+                        <b>980</b>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="first-name">
+                        Rating
+                    </div>
+                    <div class="number">
+                        <b> 8.9</b>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-box">
+                <div class="text">
+                    <h5>Chat</h5>
+                </div>
+                <div class="btn">
+                    <h5>Follow</h5>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
